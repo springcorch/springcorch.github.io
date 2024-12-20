@@ -51,7 +51,6 @@
 		color: #915c3e;
 		background: #ffffff;
 		border-bottom: 5px solid #915c3e; /* Línea continua para h2 */
-		border-left: 32px solid #915c3e;
 	}
 	main p, main ul, main li, h3{
 		padding-top: 5px;
@@ -63,6 +62,7 @@
 		border-bottom: 2px dashed #915c3e;
 		padding-bottom: 5px;
 		margin-right: 450px;
+		border-left: 32px solid #915c3e;
 	}
 
 /* sections style */
