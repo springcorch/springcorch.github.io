@@ -1,0 +1,49 @@
+/* DEFAULT(body) */
+	body {
+		background-color: #e7cdbe;
+		font-family: "Comic Sans MS", sans-serif;
+	}
+	a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+/* HEADER */
+	/*general*/
+	header {
+		/*position*/
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		
+		/*characteristics*/
+		padding: 25px 0 25px 0;
+		font-family: "Roboto Slab", serif;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #915c3e;
+	}
+	/*h1*/
+	header h1 {
+		margin: 0 0 0 25px;
+		font-size: 35px;
+	}
+	
+	/* NAV */
+		/*ul*/
+		nav ul {
+			margin: 0 25px 0 0;
+			display: flex;
+			gap: 35px;
+			list-style: none;
+		}
+		/*a*/
+		nav a:hover {
+			display: block;
+			font-size: 20px;
+			transform:rotate(-5deg);
+			color: #000000;
+		}
