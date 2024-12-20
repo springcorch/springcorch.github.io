@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Personal Page</title>
+		
+		<!--roboto slab font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<style>
+		/* body style */
+			body{
+				margin: 0;
+				background-color: #e7cdbe;
+				font-family: "Comic Sans MS", sans-serif;
+
+			}
+		
+		/* header style */
+			header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0 0 0 0;
+				padding: 0 25px;
+				background-color: #915c3e;
+				color: #ffffff;
+				font-family: "Roboto Slab", serif;
+			}
+			header a {
+				color: #ffffff;
+				text-decoration: none;
+			}
+		
+		/* nav style */
+			nav {
+				display: flex;
+				gap: 15px;
+			}
+			nav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
+			nav a:hover {
+				color: #ff9d9d;
+			}
+		
+		/* main style */
+			main{
+				display: grid;
+				grid-template-columns: 3fr 1fr; /* Two columns, one widther than the other */
+				width: 100%;
+			}
+			main h2{
+				display: flex;
+				align-items: flex-end;
+				margin: 0 0 0 0;
+				padding: 15px;
+				font-size: 26px;
+				color: #915c3e;
+				background: #ffffff;
+				border-bottom: 5px solid #915c3e; /* Línea continua para h2 */
+			}
+			main p, main ul, main li, h3{
+				padding-top: 5px;
+				margin: 0 0 0 15px;
+				font-size: 18px;
+				list-style-type: square;
+			}
+			main h3{
+				border-bottom: 2px dashed #915c3e;
+				padding-bottom: 5px;
+				margin-right: 450px;
+			}
+
+		/* sections style */
+			section img{
+				width: 6.5%;
+			}
+			.sheet{
+				padding: 20px;
+				background-color: #915c3e;
+			}
+			.sheet img{
+				width: 300px;
+				height: 300px;
+				border-radius: 10%;
+				object-fit: cover; /* Image doesn't stretch if not fit*/
+			}
+			
+		/* footer style */
+			footer{
+				background: linear-gradient(#ffffff, #e7cdbe); /* Degradado */
+				padding: 5px;
+			}
+			footer p, footer a, footer ul{
+				font-size: 12px;
+				margin: 0 0 0 15px;
+				padding: 0 0 0 0;
+				text-decoration: none;
+				list-style-type: none;
+				display: flex;
+				color: #915c3e;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">MY PERSONAL PAGE</a></h1>
+			<nav>
+				<a href="cv.html">Curriculum</a>
+				<a href="hobbies.html">Hobbies</a>
+				<a href="game.html">Game</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		
+		<main>
+			<section>
+				<h2>Welcome! Make yourself at home...<img src="imgs/mewo.gif"/></h2>
+				<h3>A lil introduction to the contents of this webpage:</h3>
+				<ul>
+					<li>My <strong>curriculum</strong>, where I specify my experiences and abilities.</li>
+					<li>Some of my <strong>hobbies</strong> and favourite activities.</li>
+					<li>A small <strong>game</strong> made with <strong>Javascript</strong> that I made.</li>
+					<li>My <strong>contact sheet</strong> to get on touch.</li>
+				</ul>
+			</section>
+			
+			<section class="sheet">
+				<img src="imgs/me.jpg">
+				<hr>
+				<p><strong>Name:</strong> Sam Corchero</p>
+				<p><strong>Location:</strong> Barcelona, Spain</p>
+				<p><strong>Ocupation:</strong> Student</p>
+			</section>
+		</main>
+		
+		<footer>
+			<p>Copyright (c) 2024-2025, all rights reserved to the creator.</p>
+			<ul>
+				<li><a href="index.html">Front page</a></li>
+				<li><a href="cv.html">Curriculum</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="game.html">Game</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
