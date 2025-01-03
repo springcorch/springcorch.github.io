@@ -51,8 +51,6 @@
 	/*general*/
 	main {
 		/*characteristics*/
-		display: grid;
-		grid-template-columns: 3fr 1fr; /* Two columns, one widther than the other */
 		margin: 0;
 	}
 	main h3{
@@ -123,4 +121,42 @@
 		list-style-type: none;
 		display: flex;
 		color: #ffffff;
+	}
+	
+	.division {
+		display: grid;
+		grid-template-columns: 3fr 1fr; /* Two columns, one widther than the other */
+	}
+	
+	.right {
+		text-align: right;
+		float: right;
+	}
+	
+	.left{
+		text-align: left;
+		float: left;
+	}
+	ol{
+		display: flex;
+		gap: 50px;
+		list-style: none;
+		text-align: left;
+		padding: 0 25px 0 25px;
+	}
+	
+	blockquote {
+		padding: 0;
+		border: 15px solid #915c3e;
+		background-color: #e7cdbe;
+	}
+	blockquote img {
+		height: 200px;
+	}
+	
+	.imgback {
+		 background-image: url("imgs/background.jpg");
+		 background-size: cover;
+		 background-position: center;
+		 background-attachment: fixed;
 	}
