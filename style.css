@@ -2,7 +2,10 @@
 	body {
 		background-color: #e7cdbe;
 		font-family: "Comic Sans MS", sans-serif;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
 	}
+	
 	a {
 		color: #ffffff;
 		text-decoration: none;
@@ -12,10 +15,6 @@
 	/*general*/
 	header {
 		/*position*/
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
 		width: 100%;
 		
 		/*characteristics*/
@@ -47,3 +46,81 @@
 			transform:rotate(-5deg);
 			color: #000000;
 		}
+		
+/* MAIN */
+	/*general*/
+	main {
+		/*characteristics*/
+		display: grid;
+		grid-template-columns: 3fr 1fr; /* Two columns, one widther than the other */
+		margin: 0;
+	}
+	main h3{
+		margin: 0 0 0 15px;
+		padding-top: 15px;
+	}
+	
+	main p, main ul, main li{
+		margin: 0 0 0 5px;
+		padding-top: 5px;
+		font-size: 18px;
+		list-style-type: square;
+	}
+
+/* H2 */
+	h2{
+		margin: 0;
+		padding: 15px;
+		font-size: 26px;
+		color: #915c3e;
+		background: #ffffff;
+		border-bottom: 5px solid #915c3e; /* Solid line underneath */
+	}
+	
+	h2 img{
+		width: 4%;
+	}
+
+/* ARTICLE */
+	article{
+		padding: 25px;
+		background-color: #915c3e;
+	}
+	article img{
+		width: 300px;
+		height: 300px;
+		border-radius: 10%;
+		object-fit: cover; /* Image doesn't stretch if not fit*/
+	}
+	
+/* SECTION */
+	section {
+		padding-top: 0;
+		margin: 0;
+	}
+
+	section h3{
+		border-bottom: 2px dashed #915c3e;
+		padding-bottom: 5px;
+	
+	}
+	
+/* FOOTER */
+	footer{
+		position: fixed;
+		bottom: 0;
+		margin: 0;
+		background: #915c3e;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+	footer p, footer a, footer ul{
+		font-size: 12px;
+		margin: 0 0 0 15px;
+		padding: 0 0 0 0;
+		text-decoration: none;
+		list-style-type: none;
+		display: flex;
+		color: #ffffff;
+	}
