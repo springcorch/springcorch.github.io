@@ -80,14 +80,26 @@
 		border-bottom: 5px solid #915c3e; /* Solid line underneath */
 	}
 
-/* ARTICLE */
+/* FIGURE */
+
 	article{
 		padding: 25px;
 		background-color: #915c3e;
+		margin: 0;
 	}
 	article img{
-		width: 300px;
 		height: 300px;
+		width: 300px;
+		border-radius: 10%;
+		object-fit: cover; /* Image doesn't stretch if not fit*/
+	}
+	
+	figure{
+		padding: 25px;
+		margin: 0;
+	}
+
+	figure img{
 		border-radius: 10%;
 		object-fit: cover; /* Image doesn't stretch if not fit*/
 	}
@@ -138,11 +150,12 @@
 		text-align: left;
 		float: left;
 	}
+
 	ol{
 		display: flex;
-		gap: 50px;
 		text-align: left;
 		padding: 0 25px 0 25px;
+		margin: 0;
 	}
 	
 	blockquote {
