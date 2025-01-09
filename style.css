@@ -181,3 +181,21 @@
 	.gif{
 		height: 50px;
 	}
+	
+	button{
+		background-color: #915c3e;
+		margin: 10px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 8px;
+		transform: translateY(0); /* Default position */
+		font-family: "Roboto Slab", serif;
+	}
+	button:hover {
+		background-color: #a76a4e; /* Slightly lighter shade */
+		transform: translateY(-2px); /* Lift the button slightly */
+	}
+	button:active {
+		background-color: #915c3e;
+		transform: translateY(0); /* Reset position */
+	}
