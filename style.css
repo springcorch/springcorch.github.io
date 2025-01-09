@@ -2,15 +2,10 @@
 	body {
 		background-color: #e7cdbe;
 		font-family: "Comic Sans MS", sans-serif;
-		margin: 0 0 0 0;
-		padding: 0 0 0 0;
+		margin: 0;
+		padding: 0;
 	}
 	
-	header a {
-		color: #ffffff;
-		text-decoration: none;
-	}
-
 /* HEADER */
 	/*general*/
 	header {
@@ -24,11 +19,17 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #915c3e;
+		border-bottom: 5px solid #ffffff; /* Gold accent */
 	}
 	/*h1*/
 	header h1 {
 		margin: 0 0 0 25px;
 		font-size: 35px;
+		text-shadow: 2px 2px #e7cdbe; 
+	}
+	header a {
+		color: #ffffff;
+		text-decoration: none;
 	}
 	
 	/* NAV */
@@ -42,7 +43,6 @@
 		/*a*/
 		nav a:hover {
 			display: block;
-			font-size: 20px;
 			transform:rotate(-5deg);
 			color: #000000;
 		}
@@ -80,8 +80,7 @@
 		border-bottom: 5px solid #915c3e; /* Solid line underneath */
 	}
 
-/* FIGURE */
-
+/* ARTICLE */
 	article{
 		padding: 25px;
 		background-color: #915c3e;
@@ -90,10 +89,12 @@
 	article img{
 		height: 300px;
 		width: 300px;
+		border: 5px solid #ffffff; /* White border for contrast */
 		border-radius: 10%;
 		object-fit: cover; /* Image doesn't stretch if not fit*/
 	}
 	
+/* FIGURE */
 	figure{
 		padding: 25px;
 		margin: 0;
@@ -110,14 +111,14 @@
 		margin: 0;
 	}
 
-	section h3{
+	section h3 {
 		border-bottom: 2px dashed #915c3e;
 		padding-bottom: 5px;
 	
 	}
 	
 /* FOOTER */
-	footer{
+	footer {
 		position: fixed;
 		bottom: 0;
 		margin: 0;
@@ -125,6 +126,7 @@
 		padding-top: 5px;
 		padding-bottom: 10px;
 		width: 100%;
+		border-top: 5px solid #ffffff;
 	}
 	footer p, footer a, footer ul{
 		font-size: 12px;
@@ -180,6 +182,7 @@
 	}
 	.gif{
 		height: 50px;
+		mix-blend-mode: multiply;
 	}
 	
 	button{
@@ -188,7 +191,6 @@
 		padding: 10px 20px;
 		border: none;
 		border-radius: 8px;
-		transform: translateY(0); /* Default position */
 		font-family: "Roboto Slab", serif;
 	}
 	button:hover {
@@ -198,4 +200,7 @@
 	button:active {
 		background-color: #915c3e;
 		transform: translateY(0); /* Reset position */
+	}
+	button img {
+		height: 50px;
 	}
