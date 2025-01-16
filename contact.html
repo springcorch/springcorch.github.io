@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Contact</title>
-		
+
 		<!--roboto slab font-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,16 +24,34 @@
 			</ul>
 			</nav>
 		</header>
-		
+
 		<main>
 			<h2>Contact with me!</h2>
+			<form action="#" method="post">
+				<p for="nombre">Nombre*: <input type="text" id="nombre" name="nombre" required></p>
+
+				<p for="fecha_nacimiento">Fecha de nacimiento: <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+				<p for="email">E-mail*: <input type="email" id="email" name="email" required>
+
+				<p for="telefono">Teléfono móvil: <input type="tel" id="telefono" name="telefono">
+
+				<p for="color">Color favorito: <input type="color" id="color" name="color">
+
+				<p for="mensaje">Mensaje*:</p>
+				<textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+				<p><input type="submit" value="Enviar" /></p>
+				<p>...</p>
+			</form>
+
 			<button type="button">
 				<a href="mailto:sam.corchero@enti.cat">
 					<img src="imgs/gmail.png"/>
 				</a>
 			</button>
 		</main>
-		
+
 		<footer>
 			<p>Copyright (c) 2024-2025, all rights reserved to the creator.</p>
 			<ul>

@@ -204,3 +204,30 @@
 	button img {
 		height: 50px;
 	}
+	
+/* FORM */
+	form{
+		padding: 25px;
+		background-color: #915c3e;
+		margin: 0;
+		float: left;
+	}
+	form p {
+		font-weight: bold;
+	}
+	form input, textarea{
+		background-color: #ffffff;
+		margin: 10px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 8px;
+		font-family: "Roboto Slab", serif;
+	}
+	form input:hover {
+		background-color: #e7cdbe; /* Slightly lighter shade */
+		transform: translateY(-2px); /* Lift the button slightly */
+	}
+	form input:active {
+		background-color: #e7cdbe;
+		transform: translateY(0); /* Reset position */
+	}
