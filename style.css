@@ -215,7 +215,7 @@
 	form p {
 		font-weight: bold;
 	}
-	form input, textarea{
+	form input, form textarea, form select{
 		background-color: #ffffff;
 		margin: 10px;
 		padding: 10px 20px;
@@ -223,11 +223,17 @@
 		border-radius: 8px;
 		font-family: "Roboto Slab", serif;
 	}
-	form input:hover {
+	form input:hover, form textarea:hover, form select:hover{
 		background-color: #e7cdbe; /* Slightly lighter shade */
 		transform: translateY(-2px); /* Lift the button slightly */
 	}
-	form input:active {
+	form input:active, form textarea:active {
 		background-color: #e7cdbe;
 		transform: translateY(0); /* Reset position */
+	}
+	
+	.color {
+		padding: 2px;
+		width: 50px;
+		height: 25px;
 	}
