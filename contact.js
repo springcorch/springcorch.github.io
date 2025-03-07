@@ -21,20 +21,32 @@ function procesa_envio(event) {
 	}
 	//mínimos cumplidos:
 	nombre.style.color = "#00ff00";
-	nombre.style.border = "2px solid ##00ff00";
+	nombre.style.border = "2px solid #00ff00";
 	
-	//campo obligatorio - mensaje
+	//campo obligatorio - email
 	let email = document.getElementById("email");
-	//mínimos requeridos - no se cumplen, no se envía
+	//expresiones regulares
+	let regularExpr = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+	if (!regularExpr.test(email.value)){
+		salida.value = "El email no es válido";
+		salida.style.color = "#ff0000";
+		email.style.color = "#ff0000";
+		email.style.border = "2px solid #ff0000";
+		
+		email.focus();
+		return false;
+	}
 	if (email.value.length < 6){
 		salida.value = "El email debe de tener al menos 6 carácteres";
 		salida.style.color = "#ff0000";
 		email.style.color = "#ff0000";
 		email.style.border = "2px solid #ff0000";
+		
+		email.focus();
 		return false;
 	}
 	email.style.color = "#00ff00";
-	email.style.border = "2px solid ##00ff00";
+	email.style.border = "2px solid #00ff00";
 	
 	//campo obligatorio - mensaje
 	let mensaje = document.getElementById("mensaje");
@@ -43,10 +55,12 @@ function procesa_envio(event) {
 		salida.style.color = "#ff0000";
 		mensaje.style.color = "#ff0000";
 		mensaje.style.border = "2px solid #ff0000";
+		
+		mensaje.focus();
 		return false;
 	}
 	mensaje.style.color = "#00ff00";
-	mensaje.style.border = "2px solid ##00ff00";
+	mensaje.style.border = "2px solid #00ff00";
 	
 	//Todo correcto - se envía formulario
 	document.getElementById("form_contacto").submit();
