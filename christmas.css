@@ -245,3 +245,64 @@
 		height: 25px;
 		
 	}
+
+@media screen and (max-width: 950px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+	
+    article {
+        padding: 15px;
+        text-align: center;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .division {
+        display: block;
+    }
+	
+	ol {
+        display: block;
+        padding: 0 10px 0 10px;
+        margin-left: 15px;
+    }
+
+    blockquote {
+        padding: 10px;
+        border-width: 10px;
+        font-size: 14px;
+    }
+
+    blockquote img {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .left, .right {
+        float: none;
+        text-align: center;
+    }
+}
