@@ -27,8 +27,15 @@
 		background-color: #7c2d2d;
 		border-bottom: 5px solid #d4af37; /* Gold accent */
 	}
+	/*h1 animation preparation*/
+	@keyframes bounce {
+		0%, 100% { transform: translateY(2px); }
+		50% { transform: translateY(-2px); }
+	}
+	
 	/*h1*/
 	header h1 {
+		animation: bounce 1s infinite ease-in-out;
 		margin: 0 0 0 25px;
 		font-size: 35px;
 		text-shadow: 2px 2px #d4af37; 
