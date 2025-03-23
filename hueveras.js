@@ -162,10 +162,10 @@ function crea() {
 	music.background = this.sound.add('background_music', { loop: true, volume: 0.25 });
 	music.background.play();
 
-	music.game_over = this.sound.add('game_over_music');
-	fx.mouseclick = this.sound.add('mouseclick_fx');
-	fx.correct = this.sound.add('correct');   // Cargar sonido correcto
-	fx.incorrect = this.sound.add('incorrect'); // Cargar sonido incorrecto
+	music.game_over = this.sound.add('game_over_music', { volume: 0.25 });
+	fx.mouseclick = this.sound.add('mouseclick_fx', { volume: 0.5 });
+	fx.correct = this.sound.add('correct', { volume: 0.5 });   // Cargar sonido correcto
+	fx.incorrect = this.sound.add('incorrect', { volume: 0.5 }); // Cargar sonido incorrecto
 }
 
 //Actualizará por cada frame:
