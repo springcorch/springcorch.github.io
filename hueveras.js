@@ -211,7 +211,7 @@ function finalizarJuego() {
 	//Detener la caida de los huevos
 	clearTimeout(huevos_interval);
 	
-	gameover_text.setPosition(canvas_w/2, canvas_h/2);
+	gameover_text.setPosition(canvas_w/2, canvas_h/2-50);
 }
 
 //Detecta si pueden caer más huevos y los cuenta siguiendo esa lógica
