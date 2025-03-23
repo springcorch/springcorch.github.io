@@ -49,6 +49,10 @@ let fx = {
 	incorrect: null
 };
 
+//Game over text:
+let gameover_text;
+
+
 //Cargará imagenes y audios:
 function precarga() {
 	this.load.image('grass_bg', 'graficos/cespedVerde.jpg');
@@ -151,6 +155,9 @@ function crea() {
 	});
 
 	countdown_text = this.add.text(700, 16, countdown, { "fontSize": 48, "fontStyle": "bold" });
+	
+	//Texto para el game over:
+	gameover_text = this.add.text(9999, 9999, "GAME OVER", { "fontSize": 64, "fontStyle": "bold"});
 
 	music.background = this.sound.add('background_music', { loop: true, volume: 0.25 });
 	music.background.play();
@@ -192,7 +199,7 @@ countdown_interval = setInterval(function () {
 }, 1000);
 
 //Al finalizar el juego se desactivará todo:
-function finalizarJuego(scene) {
+function finalizarJuego() {
 	console.log("Game Over");
 
 	// Detener música y poner la del gameOver
@@ -203,6 +210,8 @@ function finalizarJuego(scene) {
 	clearInterval(countdown_interval);
 	//Detener la caida de los huevos
 	clearTimeout(huevos_interval);
+	
+	gameover_text.setPosition(canvas_w/2, canvas_h/2);
 }
 
 //Detecta si pueden caer más huevos y los cuenta siguiendo esa lógica
